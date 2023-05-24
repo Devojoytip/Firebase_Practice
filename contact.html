@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encompass | Contact</title>
+</head>
+<body>
+    <div class="container">
+        <form action="create" method="post" id="contactForm">
+            <h6>*Name:</h6>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <h6>*Mobile No.:</h6>
+            <input type="text" id="mobile" placeholder="Enter your mobile number" required>
+            <h6>Email:</h6>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <h6>How did you hear about us?</h6>
+            <select name="herdFrom" id="herdFrom" required>
+                <option value="select" selected>----Select an option----</option>
+                <option value="friend">Friend or Co-worker</option>
+                <option value="social">Social Media</option>
+                <option value="ad">Advertisements</option>
+                <option value="other">Others</option>
+            </select>
+            <h6>*What can we service you with?</h6>
+            <select name="seekingHelpFor" id="seekingHelpFor" required>
+                <option value="option" selected>----Select an option----</option>
+                <option value="investment">Investment</option>
+                <option value="pension">Pension</option>
+                <option value="life insurance">Life Insurance</option>
+                <option value="health insurance">Health Insurance</option>
+                <option value="tax return">Tax Return</option>
+                <option value="loan">Loan</option>
+                <option value="job">Job Opportunity</option>
+                <option value="others">Others</option>
+            </select>
+            <h6>Detailed Query:</h6>
+            <textarea name="problemDesc" id="problemDesc" cols="30" rows="10"
+                placeholder="Enter your query here(300 characters)" required>
+            </textarea>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./server.js"></script>
+</body>
+</html>
